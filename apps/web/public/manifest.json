@@ -1,0 +1,22 @@
+{
+  "theme_color": "#da49bf",
+  "background_color": "#161719",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "yoursanonymously",
+  "short_name": "yoursanonymously",
+  "description": "An ad-free and open-source platform for sending and receiving anonymous confessions.",
+  "icons": [
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
