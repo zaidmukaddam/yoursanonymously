@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { useSession } from 'next-auth/react';

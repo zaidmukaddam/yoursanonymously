@@ -7,7 +7,6 @@ import { DefaultSeo } from 'next-seo';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 import Router from 'next/router';
-import Script from 'next/script';
 
 import '../styles/globals.css';
 import { queryClient } from '@/api';

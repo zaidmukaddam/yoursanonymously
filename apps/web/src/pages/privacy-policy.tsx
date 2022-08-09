@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { markdown } from '@/constants';
 import { Markdown } from '@/components';
 

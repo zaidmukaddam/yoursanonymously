@@ -3,7 +3,6 @@ import { dehydrate, useMutation } from 'react-query';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import { useRouter } from 'next/router';
 import { NextSeo } from 'next-seo';
-import toast from 'react-hot-toast';
 import Image from 'next/image';
 
 import { useUser } from '@/hooks';
