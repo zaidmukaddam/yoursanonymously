@@ -125,7 +125,7 @@ const Inbox = () => {
                   onClick={() => handleOpen(m)}
                   className='msg-card hide-tap-highlight w-full cursor-pointer scroll-mt-6 overflow-hidden text-left'
                 >
-                  <div className='relative mb-3 h-[40px] w-[95px]'>
+                  <div className='relative mb-3 h-[40px]'>
                     <Image
                       src='/assets/logo.svg'
                       layout='fill'
