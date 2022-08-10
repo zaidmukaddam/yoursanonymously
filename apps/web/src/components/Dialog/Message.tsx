@@ -72,7 +72,7 @@ export const MessageDialog = ({
           </button>
         </div>
         <div id='card-img' className='bg-secondary-300 flex flex-col p-4'>
-          <p className='font-syneExtrabold mb-2 self-center text-lg'>
+          <p className='font-syneExtrabold mb-2 self-center text-base'>
             <span className='text-primary-200'>yoursanonymously</span>.space
           </p>
 
@@ -84,7 +84,7 @@ export const MessageDialog = ({
           </div>
         </div>
 
-        <div className='flex items-center justify-end space-x-4 px-4 lg:mt-4'>
+        <div className='flex items-center justify-end space-x-4 px-4 lg:mt-4 flex-wrap'>
           <div className='flex items-start justify-between lg:w-full'>
             <button
               onClick={() => setIsOpen(false)}
@@ -126,7 +126,7 @@ export const MessageDialog = ({
                 setDeleteModal(true);
               }, 500);
             }}
-            className='del-btn flex items-center space-x-2'
+            className='del-btn flex items-center space-x-2 mt-4'
             type='button'
           >
             <BsTrashFill className='text-sm' />
