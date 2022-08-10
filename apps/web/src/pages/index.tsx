@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   const currentUser = data?.user?.username;
 
   return (
-    <section className='space-y-10'>
+    <section className='space-y-10 mb-4'>
       <div className='relative flex flex-col justify-between text-center sm:text-left xl:flex-row'>
         <div>
           <h1 className='h1-text'>
