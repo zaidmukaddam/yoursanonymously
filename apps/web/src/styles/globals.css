@@ -47,7 +47,7 @@
   }
 
   .del-btn {
-    @apply btn bg-zinc-500 hover:bg-zinc-800/80;
+    @apply btn bg-zinc-500 hover:bg-zinc-800/80 border-2 border-stone-700;
   }
 
   .h1-text {

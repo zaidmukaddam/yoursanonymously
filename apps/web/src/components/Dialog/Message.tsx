@@ -84,8 +84,8 @@ export const MessageDialog = ({
           </div>
         </div>
 
-        <div className='flex items-center justify-end space-x-4 px-4 lg:mt-4 flex-wrap'>
-          <div className='flex items-start justify-between lg:w-full'>
+        <div className='flex items-center justify-end space-x-4 px-4 lg:mt-4 flex-row'>
+          <div className='flex items-center justify-between lg:w-full'>
             <button
               onClick={() => setIsOpen(false)}
               className='ml-4 hidden lg:block'
@@ -102,7 +102,6 @@ export const MessageDialog = ({
               }}
             >
               <BsDownload className='text-sm' />
-              <p>Download</p>
             </button>
           </div>
 
@@ -115,7 +114,6 @@ export const MessageDialog = ({
             }}
           >
             <BsInstagram className='text-sm' />
-            <p>Story</p>
           </button>
 
           <button
@@ -126,11 +124,10 @@ export const MessageDialog = ({
                 setDeleteModal(true);
               }, 500);
             }}
-            className='del-btn flex items-center space-x-2 mt-4'
+            className='del-btn flex items-center space-x-2'
             type='button'
           >
             <BsTrashFill className='text-sm' />
-            <p>Delete</p>
           </button>
         </div>
       </DialogContainer>
