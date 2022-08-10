@@ -101,7 +101,7 @@ export const MessageDialog = ({
                 saveImage();
               }}
             >
-              <BsDownload className='text-base' />
+              <BsDownload className='text-sm' />
               <p>Download</p>
             </button>
           </div>
@@ -114,7 +114,7 @@ export const MessageDialog = ({
               window.location.assign('instagram://story-camera');
             }}
           >
-            <BsInstagram className='text-base' />
+            <BsInstagram className='text-sm' />
             <p>Story</p>
           </button>
 
@@ -129,7 +129,7 @@ export const MessageDialog = ({
             className='del-btn flex items-center space-x-2'
             type='button'
           >
-            <BsTrashFill className='text-base' />
+            <BsTrashFill className='text-sm' />
             <p>Delete</p>
           </button>
         </div>
