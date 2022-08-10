@@ -72,8 +72,8 @@ export const MessageDialog = ({
           </button>
         </div>
         <div id='card-img' className='bg-secondary-300 flex flex-col p-4'>
-          <p className='font-syneExtrabold mb-2 self-center text-xl'>
-            <span className='text-primary-200'>yoursanonymous</span>.space
+          <p className='font-syneExtrabold mb-2 self-center text-lg'>
+            <span className='text-primary-200'>yoursanonymously</span>.space
           </p>
 
           <div className='msg-card overflow-hidden text-left'>
