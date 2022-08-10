@@ -115,7 +115,7 @@ export const MessageDialog = ({
             }}
           >
             <BsInstagram className='text-base' />
-            <p>Share to Story</p>
+            <p>Story</p>
           </button>
 
           <button

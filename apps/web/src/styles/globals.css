@@ -35,7 +35,7 @@
   }
 
   .primary-btn {
-    @apply bg-primary-200 hover:bg-primary-200/80 btn;
+    @apply bg-primary-200 hover:bg-primary-200/80 btn border-2 border-fuchsia-400;
   }
 
   .secondary-btn {
