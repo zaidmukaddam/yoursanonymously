@@ -72,7 +72,7 @@ export const MessageDialog = ({
           </button>
         </div>
         <div id='card-img' className='bg-secondary-300 flex flex-col p-4'>
-          <p className='font-syneExtrabold mb-2 self-center text-base'>
+          <p className='font-syneExtrabold mb-2 self-center text-base lg:text-xl'>
             <span className='text-primary-200'>yoursanonymously</span>.space
           </p>
 
