@@ -90,7 +90,7 @@ const Inbox = () => {
             className='card flex w-fit items-center gap-3 px-4 py-3'
           >
             <IoIosCopy className='text-primary-100 truncate flex-none' />
-            <p>Copy your profile&lsquos link</p>
+            <p>Copy your profile&apos;s link</p>
           </button>
 
           <button
