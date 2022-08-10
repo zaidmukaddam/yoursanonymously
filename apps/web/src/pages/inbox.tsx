@@ -83,14 +83,14 @@ const Inbox = () => {
           setIsOpen={setSettingsModal}
         />
 
-        <div className='flex w-full gap-3 flex-wrap lg:flex-none'>
+        <div className='flex w-full gap-3'>
           <button
             type='button'
             onClick={copyLink}
             className='card flex w-fit items-center gap-3 px-4 py-3'
           >
             <IoIosCopy className='text-primary-100 truncate flex-none' />
-            <p>yoursanonymously.space/to/{username}</p>
+            <p>Copy your profile&lsquos link</p>
           </button>
 
           <button
@@ -125,7 +125,7 @@ const Inbox = () => {
                   onClick={() => handleOpen(m)}
                   className='msg-card hide-tap-highlight w-full cursor-pointer scroll-mt-6 overflow-hidden text-left'
                 >
-                  <div className='relative mb-3 h-[40px]'>
+                  <div className='relative mb-3 h-[40px] w-[95px]'>
                     <Image
                       src='/assets/logo.svg'
                       layout='fill'
