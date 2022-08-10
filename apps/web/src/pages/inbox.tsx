@@ -103,7 +103,7 @@ const Inbox = () => {
         </div>
 
         <div className='my-10 w-full text-left'>
-          <div className='mb-5 flex flex-col'>
+          <div className='mb-5 flex flex-col mt-10'>
             <p className='font-medium'>
               {messages?.length || isLoading
                 ? 'Latest messages'
@@ -112,7 +112,7 @@ const Inbox = () => {
             <Info message='Tap a card to reveal an anonymous message.' />
           </div>
 
-          <div className='space-y-6'>
+          <div className='space-y-6 mt-12'>
             {isLoading ? (
               <div className='mt-24 flex justify-center'>
                 <span className='loader-2' />
