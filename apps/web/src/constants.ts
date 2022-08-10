@@ -170,13 +170,8 @@ In some exceptional cases, we may be legally permitted under applicable law to p
 
 **Vendors, Consultants, and Other Third-Party Service Providers.** We may share your data with third-party vendors, service providers, contractors, or agents ("**third parties**") who perform services for us or on our behalf and require access to such information to do that work. We have contracts in place with our third parties, which are designed to help safeguard your personal information. This means that they cannot do anything with your personal information unless we have instructed them to do it. They will also not share your personal information with any organization apart from us. They also commit to protect the data they hold on our behalf and to retain it for the period we instruct. The third parties we may share personal information with are as follows:
 
--   **Web and Mobile Analytics**
-
-Google Analytics for Firebase
-
 -   **Website Hosting & Website Performance Monitoring**
-
-Vercel
+    Vercel
 
 We also may need to share your personal information in the following situations:
 
