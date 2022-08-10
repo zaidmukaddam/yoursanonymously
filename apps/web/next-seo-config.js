@@ -1,5 +1,5 @@
 const description =
-  'An platform for sending and receiving anonymous confessions! Start receiving anonymous messages with yoursanonymously!';
+  'A platform for sending and receiving anonymous confessions! Start receiving anonymous messages with yoursanonymously!';
 
 const imgUrl =
   'https://user-images.githubusercontent.com/76097144/183746122-c81b7d5b-d33c-4e7b-af0f-452e3fcf78ce.png';
