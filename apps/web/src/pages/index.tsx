@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           <div className='card font-syne w-full self-end p-8 md:w-[450px]'>
             <p>
               <span className='mr-2 text-lg font-bold'>Yoursanonymously</span>
-              <span>(adverb) [/u&apos;m&#593;&#58;min/]</span>
+              <span>(adverb)</span>
             </p>
             <p className='mt-1'>
               A public art project with promised anonyimity to send and receive confessions.
