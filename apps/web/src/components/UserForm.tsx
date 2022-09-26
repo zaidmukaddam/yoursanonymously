@@ -131,7 +131,7 @@ export const UserForm = ({ type, onRegister, loading }: Props) => {
                 type='text'
                 placeholder='Username'
                 minLength={3}
-                maxLength={12}
+                maxLength={20}
               />
             </div>
             <div className='input-field'>
