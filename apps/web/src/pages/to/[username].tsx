@@ -95,7 +95,7 @@ const SendTo = ({ username }: { username: string }) => {
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       minLength={3}
-                      maxLength={200}
+                      maxLength={255}
                       type='text'
                       placeholder='Send an anonymous message..'
                       className='border-primary-100 bg-secondary-100 w-full rounded-full border-2 py-3 px-5 pr-12 outline-none transition-all md:py-2'
