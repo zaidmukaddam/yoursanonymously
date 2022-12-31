@@ -27,7 +27,7 @@
 
 @layer components {
   .contain {
-    @apply mx-auto w-[90%] max-w-screen-xl text-sm md:text-base 2xl:w-full;
+    @apply mx-auto w-[89%] max-w-screen-xl text-sm md:text-base 2xl:w-full;
   }
 
   .btn {
