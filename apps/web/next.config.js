@@ -25,8 +25,8 @@ module.exports = withPWA({
   async redirects() {
     return [
       {
-        source: '/discord',
-        destination: 'https://discord.gg/bQKG7axhcF',
+        source: '/instagram',
+        destination: 'https://www.instagram.com/mpstme__confessions/',
         permanent: true,
       },
     ];
