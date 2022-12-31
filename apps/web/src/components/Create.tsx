@@ -6,10 +6,6 @@ import { Info } from '@/components';
 import { editUsername } from '@/api';
 import { useInboxContext } from '@/contexts/InboxContext';
 
-const AdContainer = dynamic(() => import('@/components/AdContainer'), {
-  ssr: false,
-});
-
 export const Create = () => {
   const { refetchUser } = useInboxContext();
   const { mutate } = useMutation(editUsername);
@@ -43,8 +39,6 @@ export const Create = () => {
 
         <Info message='You can still change your username later.' />
       </section>
-
-      <AdContainer slotId='3864332312' className='mt-8' />
     </>
   );
 };

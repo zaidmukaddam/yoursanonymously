@@ -12,10 +12,6 @@ import { Layout } from '@/components';
 import { indexItems } from '@/utils/constants';
 import type { NextPageWithLayout } from '..';
 
-const AdContainer = dynamic(() => import('@/components/AdContainer'), {
-  ssr: false,
-});
-
 const Home: NextPageWithLayout = () => {
   const { push } = useRouter();
   const { status } = useSession();
@@ -120,8 +116,6 @@ const Home: NextPageWithLayout = () => {
           </div>
         ))}
       </div>
-
-      <AdContainer slotId='7063833038' />
     </section>
   );
 };

@@ -15,9 +15,6 @@ import { ChatBubble } from '@/components/ChatBubble';
 import { getUser, queryClient, sendMessage } from '@/api';
 import { ConfirmDialog } from '@/components/Dialog';
 
-const AdContainer = dynamic(() => import('@/components/AdContainer'), {
-  ssr: false,
-});
 
 const SendTo: NextPageWithLayout = ({ username }: { username: string }) => {
   const { push } = useRouter();
@@ -209,7 +206,6 @@ const SendTo: NextPageWithLayout = ({ username }: { username: string }) => {
         </div>
       </section>
 
-      <AdContainer slotId='4180346918' className='mt-12' />
     </>
   );
 };

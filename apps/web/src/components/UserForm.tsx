@@ -13,9 +13,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLogEvent } from '@/hooks';
 
-const AdContainer = dynamic(() => import('@/components/AdContainer'), {
-  ssr: false,
-});
 
 interface Props {
   type: 'register' | 'login';
@@ -251,7 +248,6 @@ export const UserForm = ({ type, onRegister, loading }: Props) => {
           />
         </div>
       </div>
-      <AdContainer slotId='3174608770' className='mt-8' />
     </section>
   );
 };

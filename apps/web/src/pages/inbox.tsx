@@ -14,10 +14,6 @@ import { Recent, Seen, Sent } from '@/components/InboxTabs';
 import { InboxProvider, useInboxContext } from '@/contexts/InboxContext';
 import type { NextPageWithLayout } from '..';
 
-const AdContainer = dynamic(() => import('@/components/AdContainer'), {
-  ssr: false,
-});
-
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ');
 }
@@ -104,7 +100,6 @@ const Inbox: NextPageWithLayout = () => {
           </div>
 
           <div className='w-full pb-16'>
-            <AdContainer slotId='7607907295' className='mb-4' />
             <Tab.Group>
               <Tab.List className='bg-secondary-200 mt-1 mb-4 flex space-x-1 rounded-xl p-1'>
                 {categories.map(({ title }) => (
