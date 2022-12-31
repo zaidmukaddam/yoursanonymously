@@ -8,7 +8,6 @@ import { FaDiscord } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLogEvent } from '@/hooks';

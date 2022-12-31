@@ -5,7 +5,6 @@ import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
 import { NextSeo } from 'next-seo';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
 import { Error, Layout } from '@/components';

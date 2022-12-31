@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useMutation } from 'react-query';
-import dynamic from 'next/dynamic';
 
 import { Info } from '@/components';
 import { editUsername } from '@/api';

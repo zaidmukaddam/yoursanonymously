@@ -1,5 +1,4 @@
 import React from 'react';
-import dynamic from 'next/dynamic';
 import { markdown } from '@/utils/constants';
 import { Layout, Markdown } from '@/components';
 import type { NextPageWithLayout } from '..';

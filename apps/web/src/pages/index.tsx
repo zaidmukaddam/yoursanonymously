@@ -1,6 +1,5 @@
 import React from 'react';
 import usePwa from 'use-pwa';
-import dynamic from 'next/dynamic';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
 import { useRouter } from 'next/router';

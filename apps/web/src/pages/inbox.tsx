@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
 import toast from 'react-hot-toast';
 import { Tab } from '@headlessui/react';
 import { useRouter } from 'next/router';
