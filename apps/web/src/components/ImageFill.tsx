@@ -16,7 +16,7 @@ export const ImageFill = ({
 }: ImageFillProps) => {
   return (
     <div className={`relative overflow-hidden ${className}`}>
-      <Image src={src || '/icons/android-chrome-192x192.png'} fill {...rest} />
+      <Image src={src || '/icons/icon-128x128.png'} fill {...rest} />
     </div>
   );
 };
