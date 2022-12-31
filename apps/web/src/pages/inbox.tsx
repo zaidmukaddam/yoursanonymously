@@ -68,12 +68,12 @@ const Inbox: NextPageWithLayout = () => {
           <SettingsDialog isOpen={settingsModal} setIsOpen={setSettingsModal} />
 
           <div className='mb-5 flex w-full items-center justify-between px-4'>
-            <ImageFill
+            {/* <ImageFill
               alt='profile picture'
               src={data?.user?.image}
               objectFit='cover'
               className='border-secondary-100 h-[100px] w-[100px] rounded-full border-2'
-            />
+            /> */}
             <div className='flex flex-col items-end gap-2'>
               <div className='flex items-center gap-4'>
                 <p className='text-lg md:text-xl'>{user?.username}</p>
