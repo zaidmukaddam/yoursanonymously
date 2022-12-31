@@ -67,7 +67,7 @@ const Inbox: NextPageWithLayout = () => {
         <>
           <SettingsDialog isOpen={settingsModal} setIsOpen={setSettingsModal} />
 
-          <div className='mb-5 flex w-full items-center justify-between px-4'>
+          <div className='mb-5 flex w-full items-center justify-between px-4 sm:hidden'>
             <ImageFill
               alt='profile picture'
               src={data?.user?.image}
