@@ -8,7 +8,7 @@ import { RiSettings3Fill } from 'react-icons/ri';
 
 import { useLogEvent } from '@/hooks';
 import { SettingsDialog } from '@/components/Dialog';
-import { Layout, Create, ImageFill } from '@/components';
+import { Layout, Create } from '@/components';
 import { Recent, Seen, Sent } from '@/components/InboxTabs';
 import { InboxProvider, useInboxContext } from '@/contexts/InboxContext';
 import type { NextPageWithLayout } from '..';
@@ -22,7 +22,7 @@ const Inbox: NextPageWithLayout = () => {
   const [settingsModal, setSettingsModal] = useState(false);
 
   const { user, isUserLoading } = useInboxContext();
-  const { data, status } = useSession();
+  const { status } = useSession();
   const triggerEvent = useLogEvent();
 
   const copyLink = () => {
