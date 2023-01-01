@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
+        <script async src="https://cdn.splitbee.io/sb.js" />
       </Head>
       <body>
         <Main />
