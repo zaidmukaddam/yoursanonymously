@@ -68,7 +68,7 @@ const options: NextAuthOptions = {
   callbacks: {
     jwt({ token, user }) {
       if (user) {
-        token.username = user.name;
+        token.username = user.username;
         return token;
       }
       return token;
