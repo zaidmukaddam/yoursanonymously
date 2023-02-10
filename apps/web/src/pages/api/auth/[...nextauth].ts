@@ -71,8 +71,6 @@ const options: NextAuthOptions = {
         token.username = user.username;
         return token;
       }
-      return token;
-    },
     session({ session, token }) {
       if (session.user) {
         session.user.id = token.sub;

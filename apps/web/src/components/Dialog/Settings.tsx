@@ -16,7 +16,7 @@ import { useLogEvent } from '@/hooks';
 import { useInboxContext } from '@/contexts/InboxContext';
 import { ConfirmDialog, DialogContainer, DialogContainerProps } from '.';
 
-interface Props extends DialogContainerProps {}
+interface Props extends DialogContainerProps { }
 
 export const SettingsDialog = ({ setIsOpen, ...rest }: Props) => {
   const { push } = useRouter();
@@ -69,7 +69,6 @@ export const SettingsDialog = ({ setIsOpen, ...rest }: Props) => {
               setIsOpen(false);
               refetchUser();
               toast.success('Message updated');
-
               triggerEvent('edit_user_message');
             },
           }

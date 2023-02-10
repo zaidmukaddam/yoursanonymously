@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { formatDistanceToNow } from 'date-fns';
 import { useQuery } from 'react-query';
-import Image from 'next/image';
 
 import { getSentMessages } from '@/api';
 import { useInboxContext } from '@/contexts/InboxContext';
@@ -36,18 +35,15 @@ export const Sent = () => {
           key={m.id}
           className='border-secondary-100 bg-secondary-200 w-full overflow-hidden rounded-2xl border-2'
         >
-          <div className='border-secondary-100 flex items-center justify-between border-b-2 bg-[#171819] px-7 py-2'>
+          <div className='border-secondary-100 flex items-center justify-between border-b-2 bg-[#171819] px-7 py-3'>
             <p className='font-medium text-gray-100'>
               <span className='font-light text-gray-400'>To&#58;</span>{' '}
-              {m.username}
+              {m.receiverUsername}
             </p>
             <div className='relative h-[40px] w-[110px]'>
-              <Image
-                alt='logo'
-                src='/assets/logo.svg'
-                fill
-                className='object-contain'
-              />
+            <h3 className='font-syneExtrabold text-primary-200 text-center text-base'>
+              yoursanonymously
+            </h3>
             </div>
           </div>
 
@@ -57,7 +53,7 @@ export const Sent = () => {
               type='receiver'
               content={m.receiverMsg}
               userData={{
-                username: m?.username,
+                username: m?.receiverUsername,
               }}
             />
             <ChatBubble type='sender' content={m.content} />
@@ -67,7 +63,7 @@ export const Sent = () => {
                 type='receiver'
                 content={m.reply}
                 userData={{
-                  username: m.username,
+                  username: m.receiverUsername,
                 }}
               />
             )}

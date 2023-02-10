@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import type { RecentMessage } from '@yoursanonymously/generated';
-import { useQuery, useMutation } from 'react-query';
 import { formatDistanceToNow } from 'date-fns';
-import Image from 'next/image';
+import { useQuery, useMutation } from 'react-query';
+import type { RecentMessage } from '@yoursanonymously/generated';
 
 import { useLogEvent } from '@/hooks';
 import { MessageDialog } from '@/components/Dialog';
@@ -78,16 +77,12 @@ export const Recent = () => {
           type='button'
           key={m.id}
           onClick={() => handleOpen(m)}
-          className='msg-card hide-tap-highlight w-full cursor-pointer scroll-mt-6 overflow-hidden text-left'
+          className='msg-card relative hide-tap-highlight w-full cursor-pointer scroll-mt-6 overflow-hidden text-left'
         >
-          <div className='relative mb-3 h-[40px]'>
-            <Image
-              alt='logo'
-              src='/assets/logo.svg'
-              fill
-              className='object-contain'
-            />
-          </div>
+          {m.clue && <p className='absolute text-lg right-3 top-3'>🧩</p>}
+          <h3 className='font-syneExtrabold mb-4 text-primary-200 text-center text-3xl'>
+            yoursanonymously
+          </h3>
 
           <div className='send chat-p bg-secondary-100 before:bg-secondary-100 after:bg-secondary-200 flex max-w-full items-center space-x-3 px-6 py-4 font-medium'>
             <p className='reply text-secondary-400'>{m.receiverMsg}</p>

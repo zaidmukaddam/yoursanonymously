@@ -18,7 +18,12 @@ import { useInboxContext } from '@/contexts/InboxContext';
 
 import { Menu } from '../Menu';
 import { ChatBubble } from '../ChatBubble';
-import { ConfirmDialog, MessageDialog, ReplyDialog } from '../Dialog';
+import {
+  ClueDialog,
+  ConfirmDialog,
+  MessageDialog,
+  ReplyDialog,
+} from '../Dialog';
 
 interface Props {
   refetch: () => void;
@@ -27,10 +32,12 @@ interface Props {
 
 export const SeenCard = ({ message, refetch }: Props) => {
   const cardRef = useRef<HTMLDivElement>(null);
-  const { id, content, receiverMsg, reply, createdAt } = message;
+  const { id, content, clue, receiverMsg, reply, createdAt } =
+    message;
   const { user } = useInboxContext();
   const triggerEvent = useLogEvent();
 
+  const [clueDialog, setClueDialog] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
   const [replyModal, setReplyModal] = useState(false);
   const [cardModal, setCardModal] = useState(false);
@@ -93,9 +100,13 @@ export const SeenCard = ({ message, refetch }: Props) => {
         setIsOpen={setCardModal}
       />
 
+      {clue && (
+        <ClueDialog isOpen={clueDialog} setIsOpen={setClueDialog} clue={clue} />
+      )}
+
       <div
         ref={cardRef}
-        className='border-secondary-100 bg-secondary-200 w-full overflow-hidden rounded-2xl border-2 mb-6'
+        className='relative border-secondary-100 bg-secondary-200 w-full overflow-hidden rounded-2xl border-2 mb-6'
       >
         <div className='border-secondary-100 relative flex items-center border-b-2 bg-[#171819] py-3'>
           <button
@@ -106,9 +117,9 @@ export const SeenCard = ({ message, refetch }: Props) => {
             <HiDownload />
           </button>
 
-          <p className='font-syneExtrabold text-primary-200 mx-auto text-base'>
+          <h3 className='font-syneExtrabold text-primary-200 mx-auto text-base'>
             yoursanonymously
-          </p>
+          </h3>
 
           <Menu
             className='z-10'
@@ -163,6 +174,14 @@ export const SeenCard = ({ message, refetch }: Props) => {
             addSuffix: true,
           })}
         </p>
+
+        <div className='absolute text-lg right-3 bottom-3 space-x-4'>
+          {clue && (
+            <button type='button' onClick={() => setClueDialog(true)}>
+              🧩
+            </button>
+          )}
+        </div>
       </div>
     </>
   );
