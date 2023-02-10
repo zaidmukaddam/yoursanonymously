@@ -28,7 +28,7 @@ export const ClueDialog = ({ clue, setIsOpen, ...rest }: Props) => {
 
         <button
           type='button'
-          lassName={`self-end ${clue.length > 12 && 'mt-8'}`}
+          className={`self-end ${clue.length > 12 && 'mt-8'}`}
           onClick={() => setIsOpen(false)}
         >
           Close
