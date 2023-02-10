@@ -121,7 +121,7 @@ const SendTo: NextPageWithLayout = ({ username }: { username: string }) => {
               {username}
             </p>
             <h3 className='font-syneExtrabold text-primary-200 text-center text-lg sm:text-sm'>
-              yoursanonymously
+              ya 
             </h3>
           </div>
 
