@@ -41,7 +41,7 @@ export const Sent = () => {
               {m.receiverUsername}
             </p>
             <div className='relative h-[40px] w-[110px]'>
-            <h3 className='font-syneExtrabold text-primary-200 text-center text-base'>
+            <h3 className='font-syneExtrabold text-primary-200 text-center text-base sm:text-lg'>
               yoursanonymously
             </h3>
             </div>

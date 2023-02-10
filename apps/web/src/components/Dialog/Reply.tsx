@@ -63,7 +63,7 @@ export const ReplyDialog = ({
     >
       <div className='border-secondary-100 bg-secondary-200 w-full overflow-hidden rounded-2xl border-2'>
         <div className='border-secondary-100 border-b-2 bg-[#171819] py-3'>
-          <h3 className='font-syneExtrabold text-primary-200 text-center text-base'>
+          <h3 className='font-syneExtrabold text-primary-200 text-center text-base sm:text-lg'>
             yoursanonymously
           </h3>
         </div>

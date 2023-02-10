@@ -80,7 +80,7 @@ export const Recent = () => {
           className='msg-card relative hide-tap-highlight w-full cursor-pointer scroll-mt-6 overflow-hidden text-left'
         >
           {m.clue && <p className='absolute text-lg right-3 top-3'>🧩</p>}
-          <h3 className='font-syneExtrabold mb-4 text-primary-200 text-center text-3xl'>
+          <h3 className='font-syneExtrabold mb-4 text-primary-200 text-center text-3xl sm:text-lg'>
             yoursanonymously
           </h3>
 
