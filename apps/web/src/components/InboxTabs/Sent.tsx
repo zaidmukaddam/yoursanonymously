@@ -40,7 +40,7 @@ export const Sent = () => {
               <span className='font-light text-gray-400'>To&#58;</span>{' '}
               {m.receiverUsername}
             </p>
-            <div className='relative h-[40px] w-[110px]'>
+            <div className='relative h-[40px] w-[270px]'>
             <h3 className='font-syneExtrabold text-primary-200 text-center text-base sm:text-lg'>
               yoursanonymously
             </h3>
